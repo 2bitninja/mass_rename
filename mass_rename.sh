@@ -4,12 +4,13 @@
 
 ### Basic Script
 echo -e "This script renames a group of files"
+read -p "Where are the files located?: " FL
 read -p "Please input what you don't want: " remove
 read -p "Please input what you want to add: " add
 ls | while read line
 do echo $line
 # can use cp instead 
-mv "$line" "$(echo -e "$line" |sed -e 's/$remove/$add/' )"
+mv $FL/"$line" "$(echo -e "$FL/$line" |sed -e "s/$remove/$add/" )"
 done
 
 # can use path 
