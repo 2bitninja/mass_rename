@@ -5,6 +5,7 @@
 ### Basic Script
 echo -e "This script renames a group of files"
 read -p "Where are the files located?: " FL
+cd $FL
 read -p "Please input what you don't want: " remove
 read -p "Please input what you want to add: " add
 ls | while read line
