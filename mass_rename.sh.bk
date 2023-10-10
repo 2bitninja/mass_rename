@@ -1,0 +1,50 @@
+#!/bin/bash
+# This script is for doing mass renamaning of media files.
+# Created on 20231001
+
+clear
+
+### Funtions
+PDIR(){
+read -p "Where the files located?: " files
+cd "$files"
+echo -e "\nAre these the files you want to rename?\n$(pwd)/\n$(ls)"
+case $YN in
+   Y|y|yes) echo "yes" ;;
+   N|n|[Nn]o) echo "Try again" ;;
+esac
+read -p "Is this correct? (Y/N): " YN
+}
+
+# Data Collection
+#read -p "Where the files located?: " files
+#cd "$files"
+
+#echo -e "\nAre these the files you want to rename?\n$(pwd)/\n$(ls)"
+
+#read -p "Is this correct? (Y/N): " YN
+#echo -e "$YN"
+
+#case $YN in 
+#  Y|y|yes) echo "yes"
+#     ;;
+#  N|n|[Nn]o) echo "Try again"
+#     ;;
+#esac
+
+### Basic Script
+#case $choice in
+
+#ls | while read line
+#do echo $line
+## can use cp instead 
+#mv "$line" "$(echo -e "$line" |sed -e 's///' -e 's///' )"
+#done
+
+# can use path 
+#mv "$line" "/Users/<username>/Dowloads/$(echo -e "$line" |sed -e 's///' -e 's///' )"
+
+while true
+do
+   PDIR
+done

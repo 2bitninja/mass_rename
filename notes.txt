@@ -1,0 +1,14 @@
+cat file.txt |while read o n
+ do echo $o $n
+done
+
+ls *.mp4| while read line
+do  echo $line
+echo -e "$line \t $(echo -e  $line |sed 's/Word//')"
+done
+
+# Script for making the ummy files
+cat list.txt |while read line
+do echo $line
+touch "$line"
+done

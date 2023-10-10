@@ -13,3 +13,12 @@ mv "$line" "$(echo -e "$line" |sed -e 's///' -e 's///' )"
 done
 ```
 This will subsittute the oldname for the new name. 
+
+
+### Script is for making the dummy files for testing the mass_rename script (DummyFileCreater.sh)
+```
+cat list.txt |while read line
+do echo $line
+touch "$line"
+done
+```
