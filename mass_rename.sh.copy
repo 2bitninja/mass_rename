@@ -1,0 +1,16 @@
+#!/bin/bash
+# This script is for doing mass renamaning of media files.
+# Created on 20231001
+
+### Basic Script
+echo -e "This script renames a group of files"
+read -p "Where are the files located?: " FL
+echo -e "\nAre these the files you want to rename?\n$(pwd)\n$(ls $FL)"
+read -p "Please input what you don't want: " remove
+read -p "Please input what you want to add: " add
+
+ls $FL | while read line
+do echo $line
+mv $FL/"$line" "$(echo -e "$FL/$line" |sed -e "s/$remove/$add/" )" 2>/dev/null
+done
+ls $FL
