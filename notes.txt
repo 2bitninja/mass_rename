@@ -7,7 +7,7 @@ do  echo $line
 echo -e "$line \t $(echo -e  $line |sed 's/Word//')"
 done
 
-# Script for making the ummy files
+# Script for making the dummy files
 cat list.txt |while read line
 do echo $line
 touch "$line"
