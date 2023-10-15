@@ -1,9 +1,15 @@
 # mass_rename
-This BASH script is for mass renaming and moving of files. 
+This BASH script is for renaming large amounts of files. 
 
 ### Why this maybe useful
 Need to rename media files for use in an application such as; PLEX, Jellyfin, etc..
-Want torename picuture from trip so you can group them together
+Want to rename picuture from trip so you can group them together.
+
+## Instructions 
+After you download the files.
+```
+./mass_rename.sh
+```
 
 Basic code
 ```
@@ -14,11 +20,9 @@ done
 ```
 This will subsittute the oldname for the new name. 
 
-
 ### Script is for making the dummy files for testing the mass_rename script (DummyFileCreater.sh)
 ```
 cat list.txt |while read line
-do echo $line
-touch "$line"
+do touch "$line"
 done
 ```
