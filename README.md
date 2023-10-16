@@ -3,13 +3,13 @@ This BASH script is for renaming groups of files.
 
 ### Why you might find this script useful
 * Rename groups of pictures to something more useful then 56894315.jpg. 
-* Make media files easyer to import in TV shows and movies into media servers, such as; Plex, Emby, and Jellyfin.
+* Make media files easier to import into media servers, such as; Plex, Emby, and Jellyfin.
 
 ## Instructions 
 Please download file via the Code button. 
 
-#Testing Script
-Run the DummyFileCreater.sh in order to create dummy files.
+### Testing Script
+Run the DummyFileCreater.sh script in order to create dummy files.
 ```
 bash ./DummyFileCreater.sh
 ```
@@ -17,16 +17,16 @@ The script will create the diretory test-dir.
 
 Run the main command
 ```
-./mass_rename.sh
+bash ./mass_rename.sh
 ```
 
 ```
 	This script renames a group of files. Pleas use with care.
-__ Where are the files located?:__
+Where are the files located?:
 ```
 Type in ```test-dir```
 ```
- __ These are the files located at:__ test-dir
+  These are the files located : test-dir
 [fan] name of file (date).720p.mhsie.mkv
 [fan] name of file (date)E01S01.720p.mhsie.mkv
 [lovesubs].anime_name.E01S01.[1080p].epname.stuff.mkv
@@ -45,12 +45,12 @@ WordGirl - 1x11 - Shrinkin in the Ray Department Store Tobey.mp4
 WordGirl - 1x12 - Chuck E Sneeze Swap Meat.mp4
 WordGirl - 1x13 - Granny's Good Time All Cure Spritzer Mecha Mouse.mp4
 
- __Please input what you want to changed:__ 
+ Please input what you want to changed: 
 
 ```
 Type in ```WordGirl - 1x```. Cut & past works too.
 ```
- __Please input what you want to changed:__ WordGirl - 1x
+ Please input what you want to changed: WordGirl - 1x
 WordGirl - 1x01 - Tobey or Consequences High Fat Robbery.mp4
 WordGirl - 1x02 - You Cant Crush City Hall Two Brain Highway.mp4
 WordGirl - 1x03 - Coupon Madness When Life Gives You Potatoes.mp4
@@ -64,11 +64,12 @@ WordGirl - 1x10 - Mr. Big's Big Plan Vocab Bee.mp4
 WordGirl - 1x11 - Shrinkin in the Ray Department Store Tobey.mp4
 WordGirl - 1x12 - Chuck E Sneeze Swap Meat.mp4
 WordGirl - 1x13 - Granny's Good Time All Cure Spritzer Mecha Mouse.mp4
- __Please input what you want to add:__ 
+ Please input what you want to add: 
 ```
-Type in ```S01E``
+Type in ```S01E```
 ```
-	 __The files have been renamed to:__
+ Please input what you want to add: S01E
+	 The files have been renamed to:
 '[fan] name of file (date).720p.mhsie.mkv'
 '[fan] name of file (date)E01S01.720p.mhsie.mkv'
 '[lovesubs].anime_name.E01S01.[1080p].epname.stuff.mkv'
@@ -87,10 +88,10 @@ Type in ```S01E``
 'S01E12 - Chuck E Sneeze Swap Meat.mp4'
 "S01E13 - Granny's Good Time All Cure Spritzer Mecha Mouse.mp4"
 ```
-Notice The the change. As of now the script can't hamdle "[]". I will fix in a future update.
+Notice The the change, ```WordGirl - 1x``` was changed to ```S01E```. As of now the script can't hamdle "[ ]". I will fix this in a future update.
 
 ## Files used
-###mass_rename.sh
+### mass_rename.sh
 Main script
 ```
 ls | while read line
@@ -100,7 +101,7 @@ done
 ```
 This will subsittute the oldname for the new name. 
 
-###DummyFileCreater.sh 
+### DummyFileCreater.sh 
 Script is for making the dummy files for testing the mass_rename script (DummyFileCreater.sh)
 ```
 cat DummyList.txt |while read line
@@ -108,5 +109,5 @@ do touch "$line"
 done
 ```
 
-###DummyList.txt - Just a list of dummy file names.
-###Notes.txt - just Notes not used in project.
+__DummyList.txt__ - Just a list of dummy file names.
+__Notes.txt__ - just Notes not used in project.
