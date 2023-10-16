@@ -1,10 +1,14 @@
+# Notes & future ideas for the scrip
+
+# Getting 2 VARs from a file
 cat file.txt |while read o n
  do echo $o $n
 done
 
+# Basic setup for mass_rename
 ls *.mp4| while read line
 do  echo $line
-echo -e "$line \t $(echo -e  $line |sed 's/Word//')"
+echo -e "$line \t $(echo -e  $line |sed "s/Word//")"
 done
 
 # Script for making the dummy files
