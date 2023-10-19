@@ -3,12 +3,12 @@
 ## New features to add
 * ```cp``` function (new branch)
 	- so user can cp files with name changes instead of a rename
-* ```mv``` function - Give option to move files after there renamed (new branch)
-* Do file rename without going though the menu / wizard (new branch)
+* ```mv``` function - Give option to move files after there renamed (new feature branch) issue #5
+* Do file rename without going though the menu / wizard (new feature branch) issue #11
 	- Example: mass_rename old_name new_name
 	- Can still give a view of directory / files after
 * Maybe make a BASH GUI version (new branch)
-* Remove "**[**" "__]__" from file name. (new branch)
+* Remove "**[**" "__]__" from file name. (new feature branch) issue #4
 	- Auto remove or ask user
 * Handle numbers better
 	- Have file names increment, form 1-? 
@@ -21,7 +21,7 @@
 * Put a simular file to this one somewhere on the site.
 * Create mlilstones until new release
 * Add licence to repo
-* Add ways to help or contribute to the project
+* Add ways to help or contribute to the project, on the README.md file.
 
 ## Python script
 I found this Python script online that does the same thing, ref: https://medium.com/@hannanmentor/20-python-scripts-with-code-to-automate-your-work-68662a8dcbc1
