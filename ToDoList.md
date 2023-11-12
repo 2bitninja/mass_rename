@@ -4,6 +4,8 @@
 * ```cp``` function (new branch)
 	- so user can cp files with name changes instead of a rename
 * ```mv``` function - Give option to move files after there renamed (new feature branch) issue #5
+* Add feature letting user change a 2nd part of the file.
+	- with yes / no choice
 * Do file rename without going though the menu / wizard (new feature branch) issue #11
 	- Example: mass_rename old_name new_name
 	- Can still give a view of directory / files after
@@ -14,6 +16,10 @@
 	- Have file names increment, form 1-? 
 	- Be able to add numbers, for example file lists a TV episode as S2E10, but it is episode S1E20 or 35.  
 * Changelog / feature - tied to issues
+
+### notes
+# To remove special [ ] 
+# sed -e 's/\[//' -e 's/\]//'
 
 ## GitHub section
 * work on projects, with issues intergration
