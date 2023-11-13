@@ -17,9 +17,11 @@
 	- Be able to add numbers, for example file lists a TV episode as S2E10, but it is episode S1E20 or 35.  
 * Changelog / feature - tied to issues
 
-### notes
-# To remove special [ ] 
-# sed -e 's/\[//' -e 's/\]//'
+## notes
+To remove special [ ] 
+```
+sed -e 's/\[//' -e 's/\]//'
+```
 
 ## GitHub section
 * work on projects, with issues intergration
