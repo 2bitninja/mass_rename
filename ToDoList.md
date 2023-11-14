@@ -12,6 +12,10 @@
 * Maybe make a BASH GUI version (new branch)
 * Remove "**[**" "__]__" from file name. (new feature branch) issue #4
 	- Auto remove or ask user
+* Feature - sometimes each episode of a TV show is in a folder, when you want the episode in one folder
+* Incorparate the DummyFiles script into the main script
+	- this is to do dry runs
+	- for running the script in a test mode
 * Handle numbers better
 	- Have file names increment, form 1-? 
 	- Be able to add numbers, for example file lists a TV episode as S2E10, but it is episode S1E20 or 35.  
