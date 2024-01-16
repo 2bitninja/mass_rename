@@ -9,11 +9,9 @@ get_directory_location() {
 
 # Function for mass renaming of files
 mass_rename() {
-    echo -e "\n$bold These are the files located at:$normal"
-    echo "$(cd $FL && pwd)"
-    echo "$(ls $FL)"
-    echo -e "\n"
-    
+    #clear
+    #get_directory_location
+    echo -e "\n$bold These are the files located at:$normal $(cd $FL && pwd)\n$(ls $FL)\n"
     cd $FL
     read -p "$bold Please input what you want to change: $normal" remove
 
@@ -33,7 +31,8 @@ confirm_rename() {
             ;;
         N|n|no)
             echo -e "$bold Renaming canceled. Rerunning the renaming function.$normal"
-            mass_rename
+            $(cd - ) 
+            get_directory_location
             ;;
         *)
             echo -e "$bold Invalid choice. Going back to the previous step.$normal"
