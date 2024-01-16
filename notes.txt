@@ -11,6 +11,11 @@ do  echo $line
 echo -e "$line \t $(echo -e  $line |sed "s/Word//")"
 done
 
+Use g to make changes globally Ex: echo -e "$line \t $(echo -e  $line |sed "s/Word//g" )"
+
+to remove [ and ]
+mv "$line" "$(echo -e "$line" |sed -e 's/\[//g' -e 's/\]//g' )"
+
 # Script for making the dummy files
 cat list.txt |while read line
 do echo $line
