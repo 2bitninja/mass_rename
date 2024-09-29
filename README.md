@@ -15,6 +15,7 @@ Mass Rename is a powerful BASH script designed to help you efficiently rename an
 ## Additional Information
 - To test the script or contribute to the project, refer to the [Testing Instructions](testing.md)
 - A Python version of the script is also available. To switch to it, check out the [python branch.](https://github.com/2bitninja/mass_rename/tree/python_version)
+- For alternative methods to rename and organize files, see the [Alternatives](alternatives.md) page.
 
 ## Installation
 Follow these steps to install and prepare the script:
