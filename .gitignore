@@ -1,2 +1,4 @@
 test-dir
 .DS_Store
+*.swp
+*.bk

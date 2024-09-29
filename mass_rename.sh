@@ -11,8 +11,8 @@ clear
 echo -e "\tThis script renames a group of files. Pleas use with care."
 read -p "$bold Where are the files located?: $normal" "FL"
 echo -e "\n$bold These are the files located at:$normal $(cd $FL;pwd)\n$(ls $FL)\n"
-cd $FL
-read -p "$bold Please input what you want to changed: $normal" remove
+cd "$FL"
+read -p "$bold Please input what you want to change: $normal" remove
 
 echo -e "\n\t$bold These are the files that will be changed $normal"
 ls |grep "$remove"
