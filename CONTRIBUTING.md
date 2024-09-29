@@ -33,6 +33,9 @@ Push the changes to your forked repository:
 git push origin your-branch-name
 ```
 Finally, create a pull request (PR) to submit your changes for review.
+>[!NOTE] 
+>Please submit your pull request to the `dev` branch, not the `main` branch. The `dev` branch is where we review and test all changes before merging them into the `main` branch.
+
 ## Testing Your Changes
 If you're contributing code, ensure that your changes are properly tested before submitting a pull request.
 ### Running Tests
@@ -48,9 +51,10 @@ Follow the relevant usage instructions for testing your modifications in the Pyt
 When your changes are ready and fully tested:
 1. Go to the original repository where you'd like to submit your PR.
 2. Select "New Pull Request" and choose your branch from your forked repository.
-3. Add a clear title and description of what your changes address or improve.
-4. Reference any relevant issues if applicable.
-5. Submit the pull request.
+3. Set the base branch to `dev`.
+4. Add a clear title and description of what your changes address or improve.
+5. Reference any relevant issues if applicable.
+6. Submit the pull request.
 ---
 ## Code Style
 - BASH: Ensure your shell script is clean and readable. Use comments where necessary and follow best practices for writing portable scripts.
