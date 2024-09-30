@@ -3,10 +3,4 @@ test-dir
 *.swp
 *.bk
 ToDoList.md
-YN.sh
-YN2.sh
-case.sh
-mass_rename.sh-2nd
-mass_renamef.sh
-mass_renamef2.sh
-notes.txt
+backup
