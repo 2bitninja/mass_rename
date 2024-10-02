@@ -9,8 +9,8 @@ normal=$(tput sgr0)
 ### Basic Script
 clear
 echo -e "\tWelcome to the Mass Rename Tool. 
-This script provides a convenient way to rename a group of media files in your chosen directory.\n
-Remember to use it carefully and have backups of your files"
+\t================================\n
+This script provides a convenient way to rename a group of media files in your chosen directory. Remember to use it carefully and have backups of your files\n"
 
 # Function to perform a dry run showing proposed changes
 dry_run() {
@@ -35,7 +35,7 @@ dry_run() {
         echo -e "\n$bold Updated file list:$normal\n$(ls "$FL")\n"
     fi
     if ! $changes_made; then
-        echo "No changes will be made."
+        echo "No changes have been made."
     fi
     
     while true; do
@@ -56,7 +56,7 @@ dry_run() {
 # Function to perform the renaming process
 rename_files() {
     # Display the files in the specified location
-    echo -e "\n$bold These are the files located at: $FL$normal\n$(ls "$FL")\n"
+    echo -e "\n\n$bold These are the files located at: $FL$normal\n$(ls "$FL")\n"
 
     # Check if there are any files with brackets
     if ls "$FL" | grep -qE '\[|\]'; then
