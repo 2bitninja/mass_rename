@@ -1,0 +1,25 @@
+"DummyFileCreater.sh"
+#!/bin/bash
+# Created to on 20231009 to make dummy files for testing the mass_rename script
+cat list.txt | while read line
+do echo -e "$line"
+touch $line
+done
+
+"mass_rename.sh"
+#!/bin/bash
+# This script is for doing mass renamaning of media files.
+# Created on 20231001
+
+### Basic Script
+echo -e "This script renames a group of files"
+read -p "Where are the files located?: " FL
+read -p "Please input what you don't want: " remove
+read -p "Please input what you want to add: " add
+ls $FL | while read line
+do echo $line
+mv $FL/"$line" "$(echo -e "$FL/$line" |sed -e "s/$remove/$add/" )"
+done
+
+
+ls $FL | while read line; do echo $line; mv $FL/"$line" "$(echo -e "$FL/$line" |sed -e "s/$remove/$add/" )"; done
