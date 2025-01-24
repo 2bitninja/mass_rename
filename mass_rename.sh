@@ -39,7 +39,7 @@ dry_run() {
     fi
     
     while true; do
-        read -p "$bold Do you accept these changes? (yes/no): $normal" confirm
+        read -p "$bold Do you accept these changes and proceed with renaming? (yes/no): $normal" confirm
         confirm=$(echo "$confirm" | tr '[:upper:]' '[:lower:]')
 
         if [[ "$confirm" == "yes" || "$confirm" == "y" ]]; then
