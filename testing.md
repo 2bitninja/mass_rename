@@ -60,7 +60,7 @@ Do you want to remove the brackets and parentheses? (yes/no):
 - Type `no` to keep them unchanged.
 
 > [!WARNING]
-> TThe script cannot remove brackets `[]` in the next step, but can add them back in the step after that. If you choose not to remove them now, they can be removed in the next iteration.
+> The script cannot remove brackets `[]` in the next step, but can add them back in the step after that. If you choose not to remove them now, they can be removed in the next iteration.
 
 ### 5. Remove or Modify Part of the Filename
 At the next prompt, you’ll be asked which part of the filenames you want to change. For example, if you want to replace `WordGirl - 1x`, input that:
