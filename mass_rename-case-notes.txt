@@ -4,7 +4,7 @@
 
 clear
 
-### Funtions
+### Functions
 PDIR(){
 read -p "Where the files located?: " files
 cd "$files"
