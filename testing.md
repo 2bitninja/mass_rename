@@ -96,6 +96,3 @@ Notice how ```WordGirl - 1x``` has been replaced with ```S01E``` in the filename
 
 ---
 Feel free to provide feedback, suggest improvements, or report any issues!
-
-
-
