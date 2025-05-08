@@ -8,7 +8,7 @@ done
 
 "mass_rename.sh"
 #!/bin/bash
-# This script is for doing mass renamaning of media files.
+# This script is for doing mass renaming of media files.
 # Created on 20231001
 
 ### Basic Script
